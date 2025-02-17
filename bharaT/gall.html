@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaravathi Gallery</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1b1b;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8c00, #ff4f4f);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #ff4f4f;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.8;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-size: 1em;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<header>Amaravathi Tourism Gallery</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="heri.html">Heritage</a>
+    <a href="hotel1.html">Hotel Booking</a>
+    <a href="gall.html" class="active">Gallery</a>
+</nav>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="amastupa.webp" alt="Amaravathi Stupa">
+        <div class="gallery-caption">Amaravathi Stupa</div>
+    </div>
+    <div class="gallery-item">
+        <img src="bud.jpg" alt="Dhyana Buddha Statue">
+        <div class="gallery-caption">Dhyana Buddha Statue</div>
+    </div>
+    <div class="gallery-item">
+        <img src="temple.jpg" alt="Amareswara Swamy Temple">
+        <div class="gallery-caption">Amareswara Swamy Temple</div>
+    </div>
+    <div class="gallery-item">
+        <img src="archi.jpg" alt="Buddhist Archaeological Museum">
+        <div class="gallery-caption">Buddhist Archaeological Museum</div>
+    </div>
+    <div class="gallery-item">
+        <img src="river.webp" alt="Krishna River">
+        <div class="gallery-caption">Krishna River</div>
+    </div>
+    <div class="gallery-item">
+        <img src="fort.webp" alt="Kondaveedu Fort">
+        <div class="gallery-caption">Kondaveedu Fort</div>
+    </div>
+    <div class="gallery-item">
+        <img src="maha.jpeg" alt="Amaravathi Mahachaitya">
+        <div class="gallery-caption">Amaravathi Mahachaitya</div>
+    </div>
+    <div class="gallery-item">
+        <img src="undu.jpeg" alt="Undavalli Caves">
+        <div class="gallery-caption">Undavalli Caves</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Amaravathi Tourism. All rights reserved.
+</footer>
+
+</body>
+</html>

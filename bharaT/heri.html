@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaravathi Legacy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(45deg, #4CAF50, #388E3C);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 1.4em;
+        }
+        nav {
+            display: flex;
+            background: #222;
+            padding: 10px 20px;
+            justify-content: space-around;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 10px 15px;
+        }
+        nav a:hover {
+            background: #ff7043;
+            border-radius: 5px;
+        }
+        .hero {
+            background: url('ama.webp') center/cover no-repeat;
+            text-align: center;
+            color: white;
+            padding: 120px 20px;
+        }
+        .section {
+            padding: 30px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Amaravathi Legacy</h1>
+        <p>Uncover the Rich Cultural Heritage</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="heri.html" class="active">Heritage</a>
+        <a href="hotel1.html">Hotels</a>
+        <a href="gall.html">Gallery</a>
+    </nav>
+    <div class="hero">
+        <h2>Discover Timeless Wonders</h2>
+        <p>Journey through Amaravathi's storied past</p>
+    </div>
+    <div class="section">
+        <h2>Historic Landmarks</h2>
+        <p>From ancient stupas to sacred temples, Amaravathi is home to remarkable sites that reflect its deep history and spiritual essence.</p>
+    </div>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="amastupa.webp" alt="Amaravathi Stupa">
+            <p><strong>Amaravathi Stupa</strong> - An ancient Buddhist marvel with intricate carvings.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="temple.jpg" alt="Amareswara Temple">
+            <p><strong>Amareswara Swamy Temple</strong> - A sacred pilgrimage site dedicated to Lord Shiva.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="bud.jpg" alt="Dhyana Buddha">
+            <p><strong>Dhyana Buddha</strong> - A towering meditative statue symbolizing peace.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="undu.jpeg" alt="Undavalli Caves">
+            <p><strong>Undavalli Caves</strong> - Rock-cut caves with a blend of Hindu and Buddhist influences.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Amaravathi Legacy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

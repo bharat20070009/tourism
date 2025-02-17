@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #1b1b2f;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff8c00, #ff4f4f);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #222;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #ff4f4f;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #ff8c00;
+            border-radius: 5px;
+        }
+
+        .booking-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+        }
+
+        .booking-form {
+            background: #2d2d44;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .booking-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff8c00;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            background: #333;
+            color: white;
+        }
+
+        .form-group input:focus {
+            outline: 2px solid #ff8c00;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+        }
+
+        .radio-group label {
+            font-size: 16px;
+            cursor: pointer;
+            padding: 8px 12px;
+            background: #444;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .radio-group input {
+            display: none;
+        }
+
+        .radio-group input:checked + label {
+            background: #ff8c00;
+        }
+
+        .btn-submit {
+            background: #ff4f4f;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #e63e3e;
+        }
+    </style>
+</head>
+<body>
+
+<header>Book Your Stay</header>
+
+<nav>
+    <a href="hotel1.html">Back To Hotel Section</a>
+    <a href="book1.html" class="active">Booking</a>
+</nav>
+
+<div class="booking-container">
+    <div class="booking-form">
+        <h2>Reservation Form</h2>
+        <form action="book-room.php" method="POST">
+            <h3>Enter Guest Details</h3>
+
+            <div class="form-group">
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Mobile Number*</label>
+                <input type="tel" id="number" name="number" required>
+            </div>
+
+            <h3>Choose Bed Type</h3>
+            <div class="radio-group">
+                <input type="radio" id="single-bed" name="bed-type" value="Single Bed">
+                <label for="single-bed">Single Bed</label>
+
+                <input type="radio" id="double-bed" name="bed-type" value="Double Bed">
+                <label for="double-bed">Double Bed</label>
+            </div>
+
+            <div class="form-group">
+                <label for="check-in">Check-in Date</label>
+                <input type="date" id="check-in" name="check-in" required>
+            </div>
+
+            <div class="form-group">
+                <label for="check-out">Check-out Date</label>
+                <input type="date" id="check-out" name="check-out" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Book Now</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
