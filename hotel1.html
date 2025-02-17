@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bookings - Amaravati</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e2e;
+            color: #ffffff;
+        }
+
+        header {
+            background: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            background-color: #ff7043;
+            border-radius: 5px;
+        }
+
+        .active {
+            background-color: #04AA6D;
+            border-radius: 5px;
+        }
+
+        .hotel-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hotel-card {
+            background-color: #2a2a3c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hotel-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .hotel-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .hotel-info {
+            padding: 15px;
+        }
+
+        .hotel-info h3 {
+            margin: 10px 0;
+            font-size: 1.4em;
+            color: #4a90e2;
+        }
+
+        .hotel-info p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #ddd;
+        }
+
+        .btn-book {
+            display: block;
+            background: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 12px;
+            margin-top: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: 0.3s;
+        }
+
+        .btn-book:hover {
+            background: #e65c2f;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #222;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>Hotel Bookings Near Amaravati</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="heri.html">Heritage</a>
+    <a href="hotel1.html" class="active">Hotel Booking</a>
+    <a href="gall.html">Gallery</a>
+</nav>
+
+<div class="hotel-container">
+    <div class="hotel-card">
+        <img src="hs.jpg" alt="Hotel Sunrise">
+        <div class="hotel-info">
+            <h3>Hotel Sunrise</h3>
+            <p>Location: Amaravati</p>
+            <p>Price: ₹4000 per night</p>
+            <p>Amenities: Free WiFi, Pool, Gym</p>
+            <a href="book1.html" class="btn-book">Book Now</a>
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="hb.avif" alt="Hotel Bliss">
+        <div class="hotel-info">
+            <h3>Hotel Bliss</h3>
+            <p>Location: Amaravati</p>
+            <p>Price: ₹3000 per night</p>
+            <p>Amenities: Free Breakfast, Spa</p>
+            <a href="book1.html" class="btn-book">Book Now</a>
+        </div>
+    </div>
+
+    <div class="hotel-card">
+        <img src="hr.jpg" alt="Hotel Royal">
+        <div class="hotel-info">
+            <h3>Hotel Royal</h3>
+            <p>Location: Amaravati</p>
+            <p>Price: ₹5000 per night</p>
+            <p>Amenities: Restaurant, Free Parking</p>
+            <a href="book1.html" class="btn-book">Book Now</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 Amaravati Hotels. All rights reserved.
+</footer>
+
+</body>
+</html>
